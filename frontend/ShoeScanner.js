@@ -3,7 +3,7 @@ import { useState } from "react";
 export default function ShoeScanner() {
   const [query, setQuery] = useState("");
   const [results, setResults] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = false;
 
   const fetchPrices = async () => {
     setLoading(true);
