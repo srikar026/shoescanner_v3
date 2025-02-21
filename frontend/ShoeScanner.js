@@ -7,7 +7,7 @@ export default function ShoeScanner() {
 
   const fetchPrices = async () => {
     setLoading(true);
-    const response = await fetch(`/search?query=${query}`);
+    const response = await fetch(`https://shoescanner-v3.onrender.com/search?query=${query}`);
     const data = await response.json();
     setResults(data);
     setLoading(false);
